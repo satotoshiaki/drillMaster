@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-app_2_4.xsd"
+	version="2.4">
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/jsp/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/jsp/LogoutServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>AddQuestionServlet</servlet-name>
+		<servlet-class>servlet.teacher.AddQuestionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddQuestionServlet</servlet-name>
+		<url-pattern>/jsp/teacher/addQuestion/AddQuestionServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddStudentServlet</servlet-name>
+		<servlet-class>servlet.teacher.AddStudentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddStudentServlet</servlet-name>
+		<url-pattern>/jsp/teacher/addStudent/AddStudentServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ViewStudentServlet</servlet-name>
+		<servlet-class>servlet.teacher.ViewStudentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewStudentServlet</servlet-name>
+		<url-pattern>/jsp/teacher/viewStudent/ViewStudentServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ViewQuestionTeacher</servlet-name>
+		<servlet-class>servlet.teacher.ViewQuestionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewQuestionTeacher</servlet-name>
+		<url-pattern>/jsp/teacher/viewQuestion/ViewQuestionServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ViewAnswerTeacher</servlet-name>
+		<servlet-class>servlet.teacher.ViewAnswerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewAnswerTeacher</servlet-name>
+		<url-pattern>/jsp/teacher/viewStudent/ViewAnswerServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>ViewAnswerServlet</servlet-name>
+		<servlet-class>servlet.student.ViewAnswerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewAnswerServlet</servlet-name>
+		<url-pattern>/jsp/student/viewAnswer/ViewAnswerServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ViewQuestionStudent</servlet-name>
+		<servlet-class>servlet.student.ViewQuestionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewQuestionStudent</servlet-name>
+		<url-pattern>/jsp/student/viewQuestion/ViewQuestionServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AnswerServlet</servlet-name>
+		<servlet-class>servlet.student.AnswerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AnswerServlet</servlet-name>
+		<url-pattern>/jsp/student/answer/AnswerServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddAnswerServlet</servlet-name>
+		<servlet-class>servlet.student.AddAnswerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddAnswerServlet</servlet-name>
+		<url-pattern>/jsp/student/answer/AddAnswerServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- security-constraint>
+		<web-resource-collection>
+			<web-resource-name>JSP protected</web-resource-name>
+			<url-pattern>/jsp/student/home/index.jsp</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+		</auth-constraint>
+	</security-constraint -->
+</web-app>
